@@ -11,5 +11,5 @@ Entity Framework, code first approach
 
 `npm start`
 
-Backend: http://localhost:5000
+Backend: https://localhost:7094/api
 Frontend: http://localhost:3000

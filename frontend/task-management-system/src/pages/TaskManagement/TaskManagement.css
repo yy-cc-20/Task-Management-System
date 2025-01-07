@@ -1,0 +1,199 @@
+.timesheet-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 900px; /* Consistent max-width with table wrapper */
+    border: 1px solid #ccc;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  .search-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-top label {
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+
+  .search-input {
+    width: 300px;
+    flex-grow: 0;
+  }
+
+  .search-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .action-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    max-width: 900px; /* Same max-width as search container */
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  table th, table td {
+    text-align: left;
+    padding: 12px 8px;
+    border: none;
+    border-bottom: 1px solid #ddd; /* Bottom border for each cell */
+  }
+
+  table th {
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    font-weight: normal;
+  }
+
+  table tbody tr {
+    border-bottom: 1px solid #ddd; /* Bottom border for each row */
+  }
+
+  table tbody tr:last-child {
+    border-bottom: none; /* Remove border from last row */
+  }
+
+  .icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .edit-icon::before {
+    content: '✏️';
+  }
+
+  .delete-icon::before {
+    content: '🗑️';
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* For absolute positioning of close button */
+  }
+  
+  .mat-form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .mat-label {
+    width: 100px; /* Fixed width for labels */
+    margin-right: 10px;
+  }
+  
+  input, select {
+    flex: 1;
+    padding: 5px;
+    width: 100px;
+  }
+
+  select {
+    width: 114px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    display: block;
+  }
+  
+  .btn {
+    margin-top: 15px;
+  }
+
+  .search-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .action-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* Align Date From and Date To on the same row */
+.date-row {
+    display: flex;
+    gap: 20px; /* Space between the two fields */
+    margin-bottom: 15px;
+  }
+  
+  .date-field {
+    flex: 1; /* Ensure both fields take up equal width */
+  }
+  
+  .date-row div[mat-form-field] {
+    width: 100%;
+  }
+  
+  /* Ensure consistent styling for the labels */
+  .mat-label, div[mat-label] {
+    margin-bottom: 5px;
+    display: block;
+  }

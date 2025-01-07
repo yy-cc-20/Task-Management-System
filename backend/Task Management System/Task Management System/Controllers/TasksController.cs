@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Task_Management_System.Data;
 using Task_Management_System.DataTransferObjects;
 using Task_Management_System.Models;
+using Task_Management_System.Repositories;
 using Task_Management_System.Services;
 
 namespace Task_Management_System.Controllers;
@@ -11,9 +13,9 @@ public class TasksController : ControllerBase
 {
     private readonly TaskService _taskService;
 
-    public TasksController(TaskService taskService)
+    public TasksController(Task_Management_SystemContext context)
     {
-        _taskService = taskService;
+        _taskService = new TaskService(new TaskRepository(context));
     }
 
     // GET: api/Tasks
