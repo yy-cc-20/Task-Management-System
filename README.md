@@ -11,9 +11,6 @@
 ## Running The Application
 Running Backend
 
-    ./gradlew bootRun  # on Mac/Linux
-    gradlew bootRun    # on Windows
-
 Running Frontend 
     
     cd frontend
@@ -32,6 +29,7 @@ API URL: `https://localhost:7094/api`
 ### Frontend
 - fetch API
 - useState
+- Formik for input validation
 
 ### Backend
 - Controller, Service, Repository Layer
