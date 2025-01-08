@@ -72,8 +72,8 @@ function TaskList() {
                         <tr>
                             <th>Title</th>
                             <th>Description</th>
-                            <th>IsCompleted</th>
-                            <th>CreatedAt</th>
+                            <th>Is completed</th>
+                            <th>Created at</th>
                             <th></th>
                         </tr>
                         </thead>
