@@ -1,6 +1,6 @@
 export class ApiService {
   constructor() {
-    this.apiURL = 'https://localhost:7094/api';
+    this.apiURL = 'http://localhost:7094/api';
   }
 
   handleError(error) {

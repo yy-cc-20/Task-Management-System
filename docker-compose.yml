@@ -1,0 +1,29 @@
+
+services:
+  backend:
+    build:
+      context: ./backend/Task Management System
+      dockerfile: Dockerfile
+    ports:
+      - "7094:7094"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      - ./backend/Task Management System:/app
+    networks:
+      - task-management-network
+
+  frontend:
+    build:
+      context: ./frontend/task-management-system
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - task-management-network
+
+networks:
+  task-management-network:
+    driver: bridge
